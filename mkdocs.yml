@@ -1,0 +1,53 @@
+site_name: Wiki-Ludique UPlanet
+site_description: Réenchantons la coopération – Créez, explorez, enrichissez.
+site_url: https://votresite-uplanet.org/
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+    accent: lime
+  font:
+    text: Fira Sans
+    code: Fira Mono
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+nav:
+  - Accueil: index.md
+  - Règles:
+      - Règles de base: regles/base.md
+      - Règles alternatives: regles/alternatives.md
+  - UPlanets:
+      - Exemple: uplanets/exemple-uplanet.md
+      - Modèle de fiche: uplanets/modele-fiche.md
+  - Scénarios:
+      - La Révolte des Nodes: scenarios/la-revolte-des-nodes.md
+      - Créer un scénario: scenarios/modele-scenario.md
+  - Personnages:
+      - Zenitha: personnages/ambassadrice-zenitha.md
+      - Fiche modèle: personnages/fiche-modele.md
+  - Ressources: ressources/outils.md
+  - Communauté:
+      - Gouvernance: communaute/gouvernance.md
+      - Hall of Fame: communaute/hall-of-fame.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - codehilite
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ton_repo_uplanet
+    - icon: fontawesome/solid/globe
+      link: https://astroport.one
+repo_url: https://github.com/ton_repo_uplanet
+edit_uri: edit/main/docs/
