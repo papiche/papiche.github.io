@@ -1,6 +1,6 @@
 site_name: Wiki-Ludique UPlanet
 site_description: Réenchantons la coopération – Créez, explorez, enrichissez.
-site_url: https://votresite-uplanet.org/
+site_url: https://papiche.github.io/
 theme:
   name: material
   palette:
@@ -34,6 +34,10 @@ nav:
   - Communauté:
       - Gouvernance: communaute/gouvernance.md
       - Hall of Fame: communaute/hall-of-fame.md
+  - Développement:
+      - Guide du développeur: docs/index.md
+      - Référence API: docs/api-reference.md
+      - Guide de démarrage rapide: docs/quickstart.md
 markdown_extensions:
   - admonition
   - toc:
@@ -43,11 +47,27 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/ton_repo_uplanet
+      link: https://github.com/papiche/papiche.github.io
     - icon: fontawesome/solid/globe
       link: https://astroport.one
-repo_url: https://github.com/ton_repo_uplanet
+repo_url: https://github.com/papiche/papiche.github.io
 edit_uri: edit/main/docs/
+plugins:
+  - search
